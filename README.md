@@ -22,23 +22,17 @@ Nostra is a modern and stylish dressing shop website designed for showcasing and
 - **JavaScript**
 
 ## 🏗️ Modules
-### 🏠 Home
+### 🏠 Home Page
 - Showcases featured products and new arrivals.
 - Includes a hero banner with promotional offers.
 - Easy navigation to other sections.
 
-### 👗 Collections
+### 👗 Collections Page
 - Displays various categories of clothing.
 - Filter and sort products based on preferences.
 - Detailed product pages with pricing.
 
-### 📞 Contact
+### 📞 Contact Page
 - Contact form for customer inquiries.
 - Social media links and store location details.
 - Customer support information.
-
-## 🚀 Getting Started
-
-### 1️⃣ Clone the Repository
-```sh
-git clone https://github.com/Sivabalamanikandan-C/Nostra-Ecommerce.git
