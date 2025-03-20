@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="signupform.css">
+
+    <!-- Tailwind CSS CDN link -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- script CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <div class="bg-cover bg-center bg-fixed" style="background-image: url('https://picsum.photos/1920/1080')">
+        <div class="h-screen flex justify-center items-center">
+            <div class="bg-white mx-4 p-8 rounded shadow-md w-full md:w-1/2 lg:w-1/3">
+                <h1 class="text-3xl font-bold mb-8 text-center">Login</h1>
+                <form>
+                    <div class="mb-2">
+                        <label class="block font-semibold text-gray-700 mb-2" for="">
+                            User Name
+                        </label>
+                        <input
+                            class="border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:shadow-outline placeholder-black"
+                            id="name" type="text" placeholder="Enter your name" /><span class="name-error">Name must
+                            contains only letters *</span>
+                    </div>
+                    <div class="mb-2">
+                        <label class="block font-semibold text-gray-700 mb-2" for="">
+                            E-mail Address
+                        </label>
+                        <input
+                            class="border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:shadow-outline placeholder-black"
+                            id="email" type="email" placeholder="Enter your E-mail" /> <span class="email-error">Please
+                            provide valid E-mail Address *</span>
+                    </div>
+
+                    <div class="mb-2">
+                        <label class="block font-semibold text-gray-700 mb-2" for="">
+                            Phone Number
+                        </label>
+                        <input
+                            class="border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:shadow-outline placeholder-black"
+                            id="phno" type="number" placeholder="Enter your phone number" /><span
+                            class="phno-error">Phone number must contains only 10 digits *</span>
+                    </div>
+
+                    <div class="mb-6 flex justify-center">
+                        <button
+                            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:shadow-outline center"
+                            type="button" id="submitbtn">
+                            Login
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script Link -->
+    <script src="signupform.js"></script>
+
+</body>
+
+</html>

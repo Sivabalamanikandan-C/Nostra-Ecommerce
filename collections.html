@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS Link -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- script CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <!-- Offer-Bar Starts -->
+    <div id="offer-bar2" class="offer-bar">
+        <p><span><a href="./signupform.html" class="signup">Sign Up</a></span> and <span
+                style="font-weight: bolder;">GET 20% OFF</span> for your first
+            Order <span class="closebtn2" id="closebtn2"><i class="fa-solid fa-xmark"></i></span></p>
+    </div>
+    <!-- Offer-Bar Ends -->
+
+    <!-- Navbar Starts -->
+    <div class="p-4 flex justify-between items-baseline fixed sticky top-0 z-20 bg-white">
+        <h2 class="text-3xl font-bold title">Nostra</h2>
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 md:hidden cursor-pointer" fill="none" viewBox="0 0 24 24"
+            stroke-width="1.5" stroke="currentColor" class="size-6" id="menubar2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+        <ul class="flex lg:gap-x-12 md:gap-x-7 hidden md:flex text-lg navbar-text">
+            <li class="hover:underline"><a href="./index.html">Home</a></li>
+            <li class="hover:underline"><a href="./index.html">New Arrival</a></li>
+            <li class="hover:underline"><a href="./index.html">Most Wanted</a></li>
+            <li class="hover:underline"><a href="./collections.html">Collections</a></li>
+            <li class="hover:underline"><a href="./contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <!-- Navbar Ends -->
+
+    <!-- Sidebar Starts -->
+    <div class="sidebar p-5 fixed z-30 left-0 top-0 transition-all duration-700" id="sidebar2" style="left: -50%;">
+        <p style="text-align: right;" id="sidebarclosebtn2"><i
+                class="fa-solid fa-xmark text-lg cursor-pointer mb-1"></i>
+        </p>
+        <ul class="flex flex-col gap-y-10 text-lg navbar-text">
+            <li class="hover:underline"><a href="./index.html">Home</a></li>
+            <li class="hover:underline"><a href="./index.html">New Arrival</a></li>
+            <li class="hover:underline"><a href="./index.html">Most Wanted</a></li>
+            <li class="hover:underline"><a href="./collections.html">Collections</a></li>
+            <li class="hover:underline"><a href="./contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <!-- Sidebar Ends -->
+
+    <!-- Divider Section Starts -->
+    <section class="dividersection">
+        <div class="filter-section">
+            <h3 class="filter-name">Occasion</h3>
+            <div class="filter-names">
+                <input type="checkbox" name="cb" value="Summer"> Summer <br>
+                <input type="checkbox" name="cb" value="Party"> Party <br>
+                <input type="checkbox" name="cb" value="Beach"> Beach <br>
+            </div>
+
+            <h3 class="filter-name">Colors</h3>
+            <div class="filter-names">
+                <input type="checkbox" name="cb" value="Red"> Red <br>
+                <input type="checkbox" name="cb" value="Blue"> Blue <br>
+                <input type="checkbox" name="cb" value="White"> White <br>
+                <input type="checkbox" name="cb" value="Green"> Green <br>
+            </div>
+
+            <h3 class="filter-name">Arrivals</h3>
+            <div class="filter-names">
+                <input type="checkbox" name="cb" value="Summer"> Summer <br>
+                <input type="checkbox" name="cb" value="Party"> Party <br>
+            </div>
+        </div>
+
+        <div class="search-section">
+            <div>
+                <input type="text" id="search" class="search" placeholder="Search"
+                    style="width: 73vw; padding: 8px; border: 1px solid black; border-radius: 5px; margin-bottom: 2.2vw;">
+
+                <p id="no-items" style="display: none; color: red; font-weight: bold; text-align: center;">No items found</p>
+            </div>
+
+            <div class="imgsection" id="productcontainer">
+                <div class="imgsectionitem">
+                    <img src="./img/Products/productone.jpg" alt="productone" style="width: 21vw;"
+                        class="imgsection-img">
+                    <h2 class="itemname">Floral Summer Shirt</h2>
+                    <p class="itemprice">₹220</p>
+                </div>
+                <div class="imgsectionitem">
+                    <img src="./img/Products/producttwo.jpg" alt="productone" style="width: 21vw;"
+                        class="imgsection-img">
+                    <h2 class="itemname">Summer Green</h2>
+                    <p class="itemprice">₹260</p>
+                </div>
+                <div class="imgsectionitem">
+                    <img src="./img/Products/productthree.jpg" alt="productone" style="width: 21vw;"
+                        class="imgsection-img">
+                    <h2 class="itemname">Party Floral Shirt</h2>
+                    <p class="itemprice">₹399</p>
+                </div>
+                <div class="imgsectionitem">
+                    <img src="./img/Products/productfour.jpg" alt="productone" style="width: 21vw;"
+                        class="imgsection-img">
+                    <h2 class="itemname">Floral Summer Shirt</h2>
+                    <p class="itemprice">₹399</p>
+                </div>
+                <div class="imgsectionitem">
+                    <img src="./img/Products/productfive.jpg" alt="productone" style="width: 21vw;"
+                        class="imgsection-img">
+                    <h2 class="itemname">Beach Shirt</h2>
+                    <p class="itemprice">₹579</p>
+                </div>
+                <div class="imgsectionitem">
+                    <img src="./img/Products/productsix.jpg" alt="productone" style="width: 21vw;"
+                        class="imgsection-img">
+                    <h2 class="itemname">Shirt Party Red</h2>
+                    <p class="itemprice">₹499</p>
+                </div>
+                <div class="imgsectionitem">
+                    <img src="./img/Products/productseven.jpg" alt="productone" style="width: 21vw;"
+                        class="imgsection-img">
+                    <h2 class="itemname">Party Floral Shirt</h2>
+                    <p class="itemprice">₹399</p>
+                </div>
+                <div class="imgsectionitem">
+                    <img src="./img/Products/producteight.jpg" alt="productone" style="width: 21vw;"
+                        class="imgsection-img">
+                    <h2 class="itemname">White Shirt</h2>
+                    <p class="itemprice">₹599</p>
+                </div>
+                <div class="imgsectionitem">
+                    <img src="./img/Products/productnine.jpg" alt="productone" style="width: 21vw;"
+                        class="imgsection-img">
+                    <h2 class="itemname">Party Shirt</h2>
+                    <p class="itemprice">₹399</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- Divider Section Ends -->
+
+    <!-- News Letter Section Starts -->
+    <section class="text-center p-4">
+        <h1 class="font-bold mt-2" style="font-size: 3vw;">Join Our News Letter</h1>
+        <p class="mt-1" style="font-size: 2vw;">Signup for our email newspaper to get exclusive discounts,updates and
+            more</p>
+        <input type="text" class="m-2 border border-black md:p-2" style="width: 80%;"><br>
+        <p class="m-2 newsletter-btn inline-block">Subcribe <i class="fa-solid fa-arrow-right"></i></p>
+    </section>
+    <!-- News Letter Section Ends -->
+
+    <!-- Footer Starts -->
+    <div class="p-7 footer">
+        <h1 class="footer__title">Nostra</h1>
+        <p class="footer__desc">Nostra is your go-to destination for trendy and elegant fashion at unbeatable prices.
+            From
+            casual wear to sophisticated formal attire, we have stylish outfits for every occasion.</p>
+        <div class="footer-icons">
+            <a href="#"><i class="icon fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+            <a href="#"><i class="icon fa-brands fa-twitter" style="color: #ffffff;"></i></a>
+            <a href="#"><i class="icon fa-brands fa-facebook" style="color: #ffffff;"></i></a>
+        </div>
+        <p style="margin-top: 8px; font-size: 1.8vw;">@ 2023 Nostra.com</p>
+    </div>
+    <!-- Footer Ends -->
+
+    <!-- JavaScript Link -->
+    <script src="./collections.js"></script>
+</body>
+
+</html>

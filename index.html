@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS Link -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- script CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <!-- Offer-Bar Starts -->
+    <div id="offer-bar" class="offer-bar">
+        <p><span><a href="./signupform.html" class="signup">Sign Up</a></span> and <span
+                style="font-weight: bolder;">GET 20% OFF</span> for your first
+            Order <span class="closebtn" id="closebtn"><i class="fa-solid fa-xmark"></i></span></p>
+    </div>
+    <!-- Offer-Bar Ends -->
+
+    <!-- Navbar Starts -->
+    <div class="p-4 flex justify-between items-baseline fixed sticky top-0 z-20 bg-white">
+        <h2 class="text-3xl font-bold title">Nostra</h2>
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 md:hidden cursor-pointer" fill="none" viewBox="0 0 24 24"
+            stroke-width="1.5" stroke="currentColor" class="size-6" id="menubar">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+        <ul class="flex lg:gap-x-12 md:gap-x-7 hidden md:flex text-lg navbar-text">
+            <li class="hover:underline"><a href="./index.html">Home</a></li>
+            <li class="hover:underline"><a href="#newarrivalspage">New Arrival</a></li>
+            <li class="hover:underline"><a href="#mostwantedpage">Most Wanted</a></li>
+            <li class="hover:underline"><a href="./collections.html">Collections</a></li>
+            <li class="hover:underline"><a href="./contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <!-- Navbar Ends -->
+
+    <!-- Sidebar Starts -->
+    <div class="sidebar p-5 fixed z-30 left-0 top-0 transition-all duration-700" id="sidebar" style="left: -50%;">
+        <p style="text-align: right;" id="sidebarclosebtn"><i class="fa-solid fa-xmark text-lg cursor-pointer mb-1"></i>
+        </p>
+        <ul class="flex flex-col gap-y-10 text-lg navbar-text">
+            <li class="hover:underline"><a href="./index.html">Home</a></li>
+            <li class="hover:underline"><a href="#newarrivalspage">New Arrival</a></li>
+            <li class="hover:underline"><a href="#mostwantedpage">Most Wanted</a></li>
+            <li class="hover:underline"><a href="./collections.html">Collections</a></li>
+            <li class="hover:underline"><a href="./contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <!-- Sidebar Ends -->
+
+    <!-- Slider Starts -->
+    <div class="carousel">
+        <div class="carousel-container">
+            <img src="./img/carousel slider/slider-one.jpg" alt="Image 1">
+            <img src="./img/carousel slider/slider-two.jpg" alt="Image 2">
+            <img src="./img/carousel slider/slider-three.jpg" alt="Image 3">
+        </div>
+
+        <div class="carousel-content">
+            <h1>Level up your style with our</h1>
+            <p>Summer Collections</p>
+            <a href="#">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    </div>
+    <!-- Slider Endss -->
+
+    <!-- Brands Starts -->
+    <h1 class="brand-title p-4">Brands</h1>
+    <div class="brands p-4 text-xs sm:text-sm md:text-2xl">
+        <div class="brands-item">
+            <img src="./img/Icons/behance.png" alt="behance" class="brands-icon">
+            <h2>Behance</h2>
+        </div>
+        <div class="brands-item">
+            <img src="./img/Icons/nike.png" alt="nike" class="brands-icon">
+            <h2>Nike</h2>
+        </div>
+        <div class="brands-item">
+            <img src="./img/Icons/adidas.png" alt="adidas" class="brands-icon">
+            <h2>Adidas</h2>
+        </div>
+        <div class="brands-item">
+            <img src="./img/Icons/puma.png" alt="puma" class="brands-icon">
+            <h2>Puma</h2>
+        </div>
+        <div class="brands-item">
+            <img src="./img/Icons/leaves.png" alt="leaves" class="brands-icon">
+            <h2>Leaves</h2>
+        </div>
+        <div class="brands-item">
+            <img src="./img/Icons/simple.png" alt="simple" class="brands-icon">
+            <h2>Simple</h2>
+        </div>
+        <div class="brands-item">
+            <img src="./img/Icons/twitch.png" alt="twitch" class="brands-icon">
+            <h2>Twitch</h2>
+        </div>
+    </div>
+    <!-- Brands Ends -->
+
+    <!-- Customer Experience Starts -->
+    <div class="custom-title p-4">
+        <h1 class="custom-title__one">We Provide Best <br>
+            Customer Experiences</h1>
+        <h1 class="custom-title__two">|| We ensure that our customer have the best shopping experience</h1>
+    </div>
+
+    <div class="customerexp p-4">
+        <div class="customerexp-one">
+            <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-regular fa-circle-check"></i>
+            <h2 style="font-weight: 700; font-size: 1.3vw;">Original Products</h2>
+            <p style="font-size: 1.1vw;">We provide 100% authentic, high-quality products sourced from trusted and
+                reliable suppliers.</p>
+        </div>
+        <div class="customerexp-one">
+            <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-regular fa-face-smile"></i>
+            <h2 style="font-weight: 700; font-size: 1.3vw;">Satisfaction Guarantee</h2>
+            <p style="font-size: 1.1vw;">We ensure top-quality products and excellent service, making your shopping
+                experience worry-free.</p>
+        </div>
+        <div class="customerexp-one">
+            <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-solid fa-broom"></i>
+            <h2 style="font-weight: 700; font-size: 1.3vw;">New Arrival Everyday</h2>
+            <p style="font-size: 1.1vw;">Discover fresh, trendy, and high-quality products added daily for an exciting
+                shopping experience.</p>
+        </div>
+        <div class="customerexp-one">
+            <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-solid fa-truck-fast"></i>
+            <h2 style="font-weight: 700; font-size: 1.3vw;">Fast & Free Shipping</h2>
+            <p style="font-size: 1.1vw;">Enjoy quick, reliable delivery with no extra cost, ensuring a hassle-free
+                shopping experience.</p>
+        </div>
+    </div>
+
+    <!-- Customer Experience Ends -->
+
+    <!-- New Arrivals Starts-->
+    <h1 class="newarrivals-title pl-4" id="newarrivalspage">New Arrivals</h1>
+    <div class="newarrivals p-4">
+        <div class="newarrivals-item">
+            <img src="./img/Products/newarrivalone.jpg" alt="newarrivalone" class="newarrivals-icon">
+            <div class="absolute inset-0 bg-black opacity-50 overlay"></div>
+            <p class="newarrival-btn">Shop Now <i class="fa-solid fa-arrow-right"></i></p>
+        </div>
+        <div class="newarrivals-item">
+            <img src="./img/Products/newarrivaltwo.jpg" alt="newarrivaltwo" class="newarrivals-icon">
+            <div class="absolute inset-0 bg-black opacity-50 overlay"></div>
+            <p class="newarrival-btn">Shop Now <i class="fa-solid fa-arrow-right"></i></p>
+        </div>
+        <div class="newarrivals-item">
+            <img src="./img/Products/newarrivalthree.jpg" alt="newarrivalthree" class="newarrivals-icon">
+            <div class="absolute inset-0 bg-black opacity-50 overlay"></div>
+            <p class="newarrival-btn">Shop Now <i class="fa-solid fa-arrow-right"></i></p>
+        </div>
+        <div class="newarrivals-item">
+            <img src="./img/Products/newarrivalfour.jpg" alt="newarrivalfour" class="newarrivals-icon">
+            <div class="absolute inset-0 bg-black opacity-50 overlay"></div>
+            <p class="newarrival-btn">Shop Now <i class="fa-solid fa-arrow-right"></i></p>
+        </div>
+    </div>
+    <!-- New Arrivals Ends-->
+
+    <!-- Most Wanted Starts -->
+    <h1 class="pl-4 font-bold mostwanted__title" id="mostwantedpage">Most Wanted</h1>
+    <div class="mostwanted p-4">
+        <div class="mostwanted-item">
+            <img src="./img/Products/mostwantedone.jpg" alt="mostwantedone" class="mostwanted-icon">
+            <p class="mostwanted__sale">Sale</p>
+            <img src="./img/Products/blackheart.png" alt="blackheart" class="mostwantedfav">
+        </div>
+        <div class="mostwanted-item">
+            <img src="./img/Products/mostwantedthree.jpg" alt="mostwantedthree" class="mostwanted-icon">
+            <p class="mostwanted__sale">Sale</p>
+            <img src="./img/Products/blackheart.png" alt="blackheart" class="mostwantedfav">
+        </div>
+        <div class="mostwanted-item">
+            <img src="./img/Products/mostwantedfour.jpg" alt="mostwantedfour" class="mostwanted-icon">
+            <p class="mostwanted__sale">Sale</p>
+            <img src="./img/Products/blackheart.png" alt="blackheart" class="mostwantedfav">
+        </div>
+        <div class="mostwanted-item">
+            <img src="./img/Products/mostwantedtwo.jpg" alt="mostwantedtwo" class="mostwanted-icon">
+            <p class="mostwanted__sale">Sale</p>
+            <img src="./img/Products/blackheart.png" alt="blackheart" class="mostwantedfav">
+        </div>
+        <div class="mostwanted-item">
+            <img src="./img/Products/mostwantedfive.jpg" alt="mostwantedfive" class="mostwanted-icon">
+            <p class="mostwanted__sale">Sale</p>
+            <img src="./img/Products/blackheart.png" alt="blackheart" class="mostwantedfav">
+        </div>
+        <div class="mostwanted-item">
+            <img src="./img/Products/mostwantedsix.jpg" alt="mostwantedsix" class="mostwanted-icon">
+            <p class="mostwanted__sale">Sale</p>
+            <img src="./img/Products/blackheart.png" alt="blackheart" class="mostwantedfav">
+        </div>
+        <div class="mostwanted-item">
+            <img src="./img/Products/mostwantedseven.jpg" alt="mostwantedseven" class="mostwanted-icon">
+            <p class="mostwanted__sale">Sale</p>
+            <img src="./img/Products/blackheart.png" alt="blackheart" class="mostwantedfav">
+        </div>
+        <div class="mostwanted-item">
+            <img src="./img/Products/mostwantedeight.jpg" alt="mostwantedeight" class="mostwanted-icon">
+            <p class="mostwanted__sale">Sale</p>
+            <img src="./img/Icons/redheart.png" alt="blackheart" class="mostwantedfav">
+        </div>
+    </div>
+    <!-- Most Wanted Ends -->
+
+    <!-- Limited Offer Starts -->
+    <section class="limitedoffer p-4">
+        <div class="limitedoffer-s1">
+            <img src="./img/Products/offer.jpg" alt="limitedoffer">
+        </div>
+
+        <div class="limitedoffer-s2">
+            <h1 class="font-extrabold">Limited Offer</h1>
+            <p class="font-bold p1">35% OFF on this for the first 30 Customers</p>
+            <p class="limitedofferbtn">Shop Now <i class="fa-solid fa-arrow-right"></i></p>
+        </div>
+    </section>
+    <!-- Limited Offer Ends -->
+
+    <!-- News Letter Section Starts -->
+    <section class="text-center p-4">
+        <h1 class="font-bold mt-2" style="font-size: 3vw;">Join Our News Letter</h1>
+        <p class="mt-1" style="font-size: 2vw;">Signup for our email newspaper to get exclusive discounts,updates and
+            more</p>
+        <input type="text" class="m-2 border border-black md:p-2" style="width: 80%;"><br>
+        <p class="m-2 newsletter-btn inline-block">Subcribe <i class="fa-solid fa-arrow-right"></i></p>
+    </section>
+    <!-- News Letter Section Ends -->
+
+    <!-- Footer Starts -->
+    <div class="p-7 footer">
+        <h1 class="footer__title">Nostra</h1>
+        <p class="footer__desc">Nostra is your go-to destination for trendy and elegant fashion at unbeatable prices. From
+            casual wear to sophisticated formal attire, we have stylish outfits for every occasion.</p>
+        <div class="footer-icons">
+            <a href="#"><i class="icon fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+            <a href="#"><i class="icon fa-brands fa-twitter" style="color: #ffffff;"></i></a>
+            <a href="#"><i class="icon fa-brands fa-facebook" style="color: #ffffff;"></i></a>
+        </div>
+        <p style="margin-top: 8px; font-size: 1.8vw;">@ 2023 Nostra.com</p>
+    </div>
+    <!-- Footer Ends -->
+
+    <!-- JavaScript Link -->
+    <script src="script.js"></script>
+</body>
+
+</html>

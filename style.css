@@ -1,0 +1,403 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.offer-bar{
+    background-color: #1D232C;
+    color: #E2E1E1;
+    padding: 7px;
+    font-size: 1.6vw;
+    text-align: center;
+    font-weight: 600;
+}
+
+.closebtn{
+    margin-left: 7px;
+    cursor: pointer;
+}
+
+.signup{
+    border-bottom: 4px solid #E2E1E1;
+    font-weight: 600;
+}
+
+.title{
+    color: #1D232C;
+}
+
+.sidebar{
+    background-color: #1D232C;
+    color: #E2E1E1;
+    height: 100vh;
+    width: 50%;
+    left: -50%;
+    top: 0%;
+}
+
+.carousel {
+    position: relative;
+    width: 97%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carousel-container {
+    display: flex;
+    transition: 2s;
+    height: 35vw;
+    width: 100%;
+    position: relative;
+}
+
+.carousel img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.carousel-content {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 10;
+    width: 80%;
+}
+
+.carousel-content h1 {
+    font-size: 5vw;
+    font-weight: bolder;
+}
+
+.carousel-content p {
+    font-size: 1.8vw;
+    margin: 0.2vw 0 1.8vw 0;
+    font-weight: 600;
+}
+
+.carousel-content a {
+    background-color: white;
+    color: black;
+    padding: 1vw 1vw;
+    text-decoration: none;
+    font-size: 1.3vw;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.0);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 11vw;
+    outline: none;
+}
+
+.prev {
+    left: 15px;
+}
+
+.next {
+    right: 15px;
+}
+
+.brand-title{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.brands{
+    display: flex;
+    justify-content: space-between;
+}
+
+.brands-item{
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    align-items: center;
+}
+
+.brands-icon{
+    width: 5vw;
+    align-items: center;
+}
+
+.custom-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.custom-title__one{
+    font-size: 2.4vw;
+    font-weight: 700;
+}
+
+.custom-title__two{
+    font-size: 1.7vw;
+    font-weight: 400;
+}
+
+.customerexp{
+    display: flex;
+    gap: 1.3%;
+}
+
+.customerexp-one{
+    background-color: #F2F4F7;
+    padding: 10px;
+}
+
+.newarrivals-title{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.newarrivals{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newarrivals-item{
+    position: relative;
+}
+
+.newarrival-btn{
+    position: absolute;
+    bottom: 8%;
+    left: 28%;
+    background-color: #E2E1E1;
+    padding: 2% 3.5% 2% 3.5%;
+    cursor: pointer;
+    font-size: 1.3vw;
+    font-weight: 600;
+    border-radius: 1.3vw;
+}
+
+.newarrivals-icon{
+    width: 20vw;
+    border-radius: 0.7vw;
+}
+
+.overlay{
+    border-radius: 0.7vw;
+}
+
+.mostwanted__title{
+    font-size: 2vw;
+}
+
+.mostwanted {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden; 
+    white-space: nowrap;
+    scroll-behavior: smooth; 
+    gap: 1rem; 
+    width: 100%;
+}
+
+.mostwanted-item {
+    flex: 0 0 auto; 
+    width: 20vw;
+}
+
+.mostwanted::-webkit-scrollbar {
+    height: 8px;
+}
+
+.mostwanted-item{
+    position: relative;
+}
+
+.mostwanted-icon{
+    width: 20vw;
+}
+
+.mostwantedfav{
+    width: 3vw;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    margin: 0.7vw;
+}
+
+.mostwanted__sale{
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    font-size: 2vw;
+    background-color: red;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10%;
+}
+
+
+.newsletter-btn{
+    background-color: #1D232C;
+    color: #E2E1E1;
+    font-size: 1.3vw;
+    padding: 0.6%;
+    border-radius: 5px;
+}
+
+.limitedoffer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1D232C;
+    color: #E2E1E1;
+    padding: 20px;
+    font-size: 2.1vw;
+}
+
+.limitedoffer h1{
+    font-size: 2.2vw;
+}
+
+.p1{
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+}
+
+.limitedoffer-s1{
+    padding: 2vw;
+}
+
+.limitedoffer-s2{
+    padding: 2vw;
+}
+
+.limitedofferbtn{
+    background-color: #E2E1E1;
+    color: black;
+    display: inline-block;
+    padding: 2px 10px 2px 10px;
+    font-size: 1.8vw;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.filter-name{
+    font-size: 2.7vw;
+    font-weight: bolder;
+}
+
+.filter-names{
+    font-size: 1.9vw;
+    margin-bottom: 1vw;
+    width: 13vw;
+}
+
+.dividersection{
+    padding: 2vw;
+    display: flex;
+}
+
+.filter-section{
+    border-right: 3px solid #1D232C;
+    padding-right: 5.7vw;
+}
+
+.search-section{
+    margin-left: 2.7vw;
+}
+
+.search{
+    padding: 1vw;
+    display: inline;
+    border: 1px solid black;
+}
+
+.imgsection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1vw;
+}
+
+.imgsectionitem {
+    width: calc(33.50% - 20px);
+    text-align: left;
+
+}
+
+.itemname{
+    font-size: 1.7vw;
+    font-weight: 600;
+}
+
+.itemprice{
+    font-size: 1.6vw;
+}
+
+.footer{
+    background-color: #1D232C;
+    color: #E2E1E1;
+}
+
+.footer__title{
+    font-size: 4vw;
+    font-weight: bolder;
+}
+
+.footer__desc{
+    font-size: 1.8vw;
+    margin-bottom: 5px;
+}
+
+.footer-icons{
+    font-size: 2vw;
+}
+
+.footer-icons a{
+    margin: 10px 15px 10px 0px;
+}
+
+.contactform{
+    background-color: #1D232C;
+    color: #DDDDDD;
+    margin: 2vw 20vw 2vw 20vw;
+    border-radius: 1vw;
+}
+
+.nameinp, .mailinp, .msginp{
+    width: 100%;
+    padding: 1.7vw;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    margin-bottom: 1vw;
+    font-size: 1.4vw;
+    color: black;
+}
+
+.submitbtn{
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #0056b3;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS Link -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- script CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Navbar Starts -->
+    <div class="p-4 flex justify-between items-baseline fixed sticky top-0 z-20 bg-white">
+        <h2 class="text-3xl font-bold title">Nostra</h2>
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 md:hidden cursor-pointer" fill="none" viewBox="0 0 24 24"
+            stroke-width="1.5" stroke="currentColor" class="size-6" id="menubar1">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+        <ul class="flex lg:gap-x-12 md:gap-x-7 hidden md:flex text-lg navbar-text">
+            <li class="hover:underline"><a href="./index.html">Home</a></li>
+            <li class="hover:underline"><a href="./index.html">New Arrival</a></li>
+            <li class="hover:underline"><a href="./index.html">Most Wanted</a></li>
+            <li class="hover:underline"><a href="./collections.html">Collections</a></li>
+            <li class="hover:underline"><a href="./contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <!-- Navbar Ends -->
+
+    <!-- Sidebar Starts -->
+    <div class="sidebar p-5 fixed z-30 left-0 top-0 transition-all duration-700" id="sidebar1" style="left: -50%;">
+        <p style="text-align: right;" id="sidebarclosebtn1"><i class="fa-solid fa-xmark text-lg cursor-pointer mb-1"></i>
+        </p>
+        <ul class="flex flex-col gap-y-10 text-lg navbar-text">
+            <li class="hover:underline"><a href="./index.html">Home</a></li>
+            <li class="hover:underline"><a href="./index.html">New Arrival</a></li>
+            <li class="hover:underline"><a href="./index.html">Most Wanted</a></li>
+            <li class="hover:underline"><a href="./collections.html">Collections</a></li>
+            <li class="hover:underline"><a href="./contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <!-- Sidebar Ends -->
+     
+    <!-- Contactform Starts -->
+    <div class="contactform p-10 mt-3">
+        <form action="">
+            <h1 style="font-size: 3vw; text-align: center; font-weight: bolder;">Contact Us</h1>
+            <label for="" style="font-size: 2.2vw; text-align: center;">Name:</label> <br>
+            <input type="text" class="nameinp"> <br>
+            <label for="" style="font-size: 2.2vw; text-align: center;">E-mail:</label> <br>
+            <input type="email" class="mailinp"> <br>
+            <label for="" style="font-size: 2.2vw; text-align: center;">Message:</label> <br>
+            <textarea name="" id="" rows="2" class="msginp"></textarea> <br>
+            <input type="submit" value="Submit" class="submitbtn">
+        </form>
+    </div>
+    <!-- Contactform Ends -->
+
+    <!-- News Letter Section Starts -->
+    <section class="text-center p-4">
+        <h1 class="font-bold mt-2" style="font-size: 3vw;">Join Our News Letter</h1>
+        <p class="mt-1" style="font-size: 2vw;">Signup for our email newspaper to get exclusive discounts,updates and
+            more</p>
+        <input type="text" class="m-2 border border-black md:p-2" style="width: 80%;"><br>
+        <p class="m-2 newsletter-btn inline-block">Subcribe <i class="fa-solid fa-arrow-right"></i></p>
+    </section>
+    <!-- News Letter Section Ends -->
+
+    <!-- Footer Starts -->
+    <div class="p-7 footer">
+        <h1 class="footer__title">Nostra</h1>
+        <p class="footer__desc">Nostra is your go-to destination for trendy and elegant fashion at unbeatable prices. From
+            casual wear to sophisticated formal attire, we have stylish outfits for every occasion.</p>
+        <div class="footer-icons">
+            <a href="#"><i class="icon fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+            <a href="#"><i class="icon fa-brands fa-twitter" style="color: #ffffff;"></i></a>
+            <a href="#"><i class="icon fa-brands fa-facebook" style="color: #ffffff;"></i></a>
+        </div>
+        <p style="margin-top: 8px; font-size: 1.8vw;">@ 2023 Nostra.com</p>
+    </div>
+    <!-- Footer Ends -->
+
+    <!-- JavaScript Link -->
+    <script src="./contact.js"></script>
+</body>
+</html>
